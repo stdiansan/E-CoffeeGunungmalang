@@ -1,9 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context=".register.activity_register">
+
+<ScrollView
+    android:id="@+id/scrollView1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".register.activity_register">
+    android:layout_height="wrap_content"
+    android:minWidth="25dp"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25dp"
+        android:minHeight="25dp">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_gunungmalang" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:minWidth="25dp"
+            android:minHeight="25dp">
+
+
+            <EditText
+                android:id="@+id/daftar_et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawablePadding="20dp"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#373435"
+                android:textColorHint="#ff000000" />
+
+            <EditText
+                android:id="@+id/daftar_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="20dp"
+                android:hint="Password (min. 6 karakter)"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#373435"
+                android:textColorHint="#ff000000" />
+            <EditText
+                android:id="@+id/daftar_et_ulangpassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="20dp"
+                android:hint="Konfirmasi Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#373435"
+                android:textColorHint="#ff000000" />
+
+
+            <EditText
+                android:id="@+id/daftar_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="20dp"
+                android:hint="Alamat Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="#373435"
+                android:textColorHint="#ff000000" />
+
+            <EditText
+                android:id="@+id/daftar_et_notel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:drawableLeft="@drawable/ic_phone_number"
+                android:drawablePadding="20dp"
+                android:hint="Nomor Telepon"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="#373435"
+                android:textColorHint="#ff000000" />
+
+
+            <Button
+                android:id="@+id/daftar_button_simpan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_round_shape_green"
+                android:text="daftar"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/daftar_button_batal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_round_shape_batalregister"
+                android:text="Batal"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+        </TableLayout>
+    </TableLayout>
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
