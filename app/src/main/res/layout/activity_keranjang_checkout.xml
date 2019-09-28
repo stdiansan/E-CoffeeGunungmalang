@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".keranjang_belanja.activity_keranjang_checkout"
+    android:background="@color/abu_abu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/checkout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Periksa Pesanan"
+                android:textColor="@color/hitam_pekat"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkout_toolbar"
+        android:paddingTop="55dp"
+        android:id="@+id/checkout_SV_scroll">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/checkout_LL_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/checkout_TL_alamat_pengiriman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/putih"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkout_toolbar">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Alamat Pengiriman : "
+                    android:textColor="@color/hitam_pekat"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+                <TableRow
+                    android:id="@+id/checkout_TR_alamat_pengiriman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_IMG_bind"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_place"></ImageView>
+
+                    <TextView
+                        android:id="@+id/checkout_clik_to_add_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/abu_abu"
+                        android:gravity="center"
+                        android:text="Ketuk untuk menambahkan alamat"
+                        android:textSize="16dp" />
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/checkout_TL_barang"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/putih"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkout_TL_alamat_pengiriman">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Pesanan :  "
+                    android:textColor="@color/hitam_pekat"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <include layout="@layout/activity_keranjang_checkout_list_pesanan"></include>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/putih"
+                    android:layout_margin="5dp"
+                    android:id="@+id/checkout_TL_jasa_pengiriman"
+                    android:clickable="true">
+                    <TextView
+                        android:id="@+id/checkout_TV_jasa_pengiriman_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_arrow_forward"
+                        android:paddingRight="10dp"
+                        android:elevation="4dp"
+                        android:text="Jasa Pengiriman"
+                        android:textColor="@color/hitam_pekat"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/abu_abu"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/checkout_TR_jasa_pengiriman">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:id="@+id/checkout_TV_jasa_pengiriman_detail"
+                            android:text="Pos Indonesia"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:id="@+id/checkout_TV_jasa_pengiriman_harga"
+                            android:text="Rp. "/>
+                    </TableRow>
+
+                </TableLayout>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/putih"
+                    android:layout_margin="5dp"
+                    android:id="@+id/checkout_TL_nomor_telepon">
+                    <TextView
+                        android:id="@+id/checkout_TV_nomor_telepon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_arrow_forward"
+                        android:paddingRight="10dp"
+                        android:elevation="4dp"
+                        android:text="Nomor Telepon Penerima"
+                        android:textColor="@color/hitam_pekat"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/abu_abu"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/checkout_TR_nomor_telepon">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:id="@+id/checkout_TV_nomor_telepon_detail"
+                            android:text="+6207839053805"/>
+                    </TableRow>
+
+                </TableLayout>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/putih"
+                    android:layout_margin="5dp"
+                    android:id="@+id/checkout_TL_metode_pembayaran"
+                    android:clickable="true">
+                    <TextView
+                        android:id="@+id/checkout_metode_pembayaran"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_arrow_forward"
+                        android:paddingRight="10dp"
+                        android:elevation="4dp"
+                        android:text="Metode Pembayaran"
+                        android:textColor="@color/hitam_pekat"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/abu_abu"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/checkout_TR_metode_pembayaran">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:id="@+id/checkout_TV_metode_pembayaran"
+                            android:text="Transfer Bank"/>
+                    </TableRow>
+
+                </TableLayout>
+            </TableLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUAT PESANAN"
+                android:layout_margin="10dp"
+                android:id="@+id/checkout_button_buat_pesanan"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:background="@color/coklat"></Button>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

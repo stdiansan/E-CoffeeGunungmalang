@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".register.activity_register"></activity>
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_metodepembayaran"></activity>
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_nomortelepon" />
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_jasapengiriman" />
+        <activity android:name=".profile.activity_profile_bantuan" />
+        <activity android:name=".profile.activity_profile_ketentuan_layanan" />
+        <activity android:name=".profile.activity_profile_kebijakan_privasi" />
+        <activity android:name=".profile.activity_profile_bind_account" />
+        <activity android:name=".profile.activity_profile_ubah_biodata" />
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_tambah_alamat" />
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout" />
+        <activity android:name=".register.activity_register" />
         <activity android:name=".login.activity_login" />
         <activity android:name=".activity_splashscreen">
             <intent-filter>
