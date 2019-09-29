@@ -4,50 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E1E1E1">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/home_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#fff"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/xml_round_shape_borderonly"
-            android:id="@+id/home_searchbar"
-            android:hint="Mau cari kopi apa ?"
-            android:drawableLeft="@drawable/ic_search"
-            android:drawablePadding="15dp"
-            android:paddingLeft="20dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"/>
-    </androidx.appcompat.widget.Toolbar>
-
+    android:background="@color/abu_abu">
     <LinearLayout
         android:id="@+id/home_LL_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
+        android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_toolbar">
+        app:layout_constraintTop_toBottomOf="parent">
 
         <ScrollView
             android:id="@+id/home_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#fff"
+            android:background="@color/abu_abu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_toolbar">
+            app:layout_constraintTop_toBottomOf="parent">
 
             <LinearLayout
                 android:id="@+id/home_linear_parent"

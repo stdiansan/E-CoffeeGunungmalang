@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#373435</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="hitam_pekat">#000000</color>
@@ -8,4 +8,5 @@
     <color name="abu_abu">#E6E6E6</color>
     <color name="putih">#ffffff</color>
     <color name="merah">#FF000D</color>
+    <color name="biru_muda">#C4D9E4</color>
 </resources>

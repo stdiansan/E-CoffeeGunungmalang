@@ -10,13 +10,6 @@
         android:name="com.pplc.coffeegunungmalang.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.pplc.coffeegunungmalang.ui.profile.ProfileFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_profile" />
-
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.pplc.coffeegunungmalang.ui.notifications.NotificationsFragment"
@@ -25,6 +18,11 @@
     <fragment
         android:id="@+id/navigation_keranjang"
         android:name="com.pplc.coffeegunungmalang.ui.cart.CartFragment"
-        android:label="Keranjang"
+        android:label="@string/title_keranjang"
         tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.pplc.coffeegunungmalang.ui.profile.ProfileFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -9,18 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_metodepembayaran"></activity>
+        <activity android:name=".produk.activity_produk_detail"></activity>
+        <activity android:name=".keranjang_belanja.activity_keranjang_checkout_metodepembayaran" />
         <activity android:name=".keranjang_belanja.activity_keranjang_checkout_nomortelepon" />
         <activity android:name=".keranjang_belanja.activity_keranjang_checkout_jasapengiriman" />
-        <activity android:name=".profile.activity_profile_bantuan" />
-        <activity android:name=".profile.activity_profile_ketentuan_layanan" />
-        <activity android:name=".profile.activity_profile_kebijakan_privasi" />
-        <activity android:name=".profile.activity_profile_bind_account" />
-        <activity android:name=".profile.activity_profile_ubah_biodata" />
+        <activity
+            android:name=".profile.activity_profile_bantuan"
+            android:label="Pusat Bantuan" />
+        <activity
+            android:name=".profile.activity_profile_ketentuan_layanan"
+            android:label="Ketentuan Layanan" />
+        <activity
+            android:name=".profile.activity_profile_kebijakan_privasi"
+            android:label="Kebijakan Privasi" />
+        <activity
+            android:name=".profile.activity_profile_bind_account"
+            android:label="Akun Terhubung" />
+        <activity
+            android:name=".profile.activity_profile_ubah_biodata"
+            android:label="Ubah Biodata" />
         <activity android:name=".keranjang_belanja.activity_keranjang_checkout_tambah_alamat" />
-        <activity android:name=".keranjang_belanja.activity_keranjang_checkout" />
-        <activity android:name=".register.activity_register" />
-        <activity android:name=".login.activity_login" />
+        <activity
+            android:name=".keranjang_belanja.activity_keranjang_checkout"
+            android:label="Periksa Pesanan"></activity>
+        <activity
+            android:name=".register.activity_register"
+            android:label="Register" />
+        <activity
+            android:name=".login.activity_login"
+            android:label="Login" />
         <activity android:name=".activity_splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

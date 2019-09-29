@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".produk.activity_produk_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/abu_abu"
+            android:orientation="vertical" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/putih"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/coffee_default" />
+                <TextView
+                    android:id="@+id/produj_detail_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/hitam_pekat"
+                    android:gravity="center"
+                    android:text="KOPI ARABIKA" />
+                <TextView
+                    android:id="@+id/produk_detail_hargaproduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Rp. 150000" />
+            </TableLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:paddingLeft="5dp"
+                android:background="@color/putih">
+                <TextView
+                    android:id="@+id/produk_detail_TV_berat"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Berat" />
+
+                <TextView
+                    android:id="@+id/produk_detail_TV_berat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="70dp"
+                    android:text="1 kg" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:paddingLeft="5dp"
+                android:background="@color/putih">
+                <TextView
+                    android:id="@+id/produk_detail_TV_stok"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stok Tersedia" />
+
+                <TextView
+                    android:id="@+id/produk_detail_TV_stok1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="70dp"
+                    android:text="100" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:background="@color/putih">
+                <TextView
+                    android:id="@+id/produk_detail_TV_pesan_minimal"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pesanan Minimal" />
+
+                <TextView
+                    android:id="@+id/produk_detail_TV_pesan_minimal1"
+                    android:paddingRight="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 " />
+            </TableRow>
+            <TableLayout
+                android:id="@+id/detail_produk_TL_deskripsi_produk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/putih"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Deskripsi Produk :"
+                    android:textColor="@color/hitam_pekat"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+                <TableRow
+                    android:id="@+id/detail_produk_TR_deskripsi_produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/detail_produk_TV_deskripsi_produk"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/biru_muda"
+                        android:gravity="center"
+                        android:text="Deskripsi produkk..."
+                        android:textSize="16dp" />
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pesan"
+                android:layout_margin="10dp"
+                android:id="@+id/detail_produk_BT_pesan"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:background="@color/coklat"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

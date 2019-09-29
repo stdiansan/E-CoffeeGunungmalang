@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">E-Coffee Gunungmalang</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Produk</string>
+    <string name="title_dashboard">Akun Saya</string>
+    <string name="title_notifications">Notifikasi</string>
+    <string name="title_keranjang">Keranjang</string>
+    <string name="judul_jasa_pengiriman">Jasa Pengiriman</string>
+    <string name="judul_metode_pembayaran">Metode Pembayaran</string>
+    <string name="judul_nomor_telepon">Nomor Telepon</string>
+    <string name="judul_alamat_penerima">Alamat Penerima</string>
+    <string name="judul_profile_bantuan">Bantuan</string>
+    <string name="judul_profile_kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="judul_profile_ketentuan_layanan">Ketentuan Layanan</string>
+    <string name="judul_profile_ubah_biodata">Ubah Biodata</string>
 </resources>

@@ -5,37 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/abu_abu">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/profile_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#fff"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/profile_TV_title"
-            android:text="Akun Saya"
-            android:textSize="22dp"
-            android:textColor="@color/hitam_pekat"
-            android:textStyle="bold"
-            android:gravity="center">
-        </TextView>
-
-    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:id="@+id/profile_LL_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar">
+        app:layout_constraintTop_toBottomOf="parent">
 
     <ScrollView
         android:id="@+id/profile_scrollview"
@@ -45,7 +22,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar">
+        app:layout_constraintTop_toBottomOf="parent">
 
     <LinearLayout
         android:id="@+id/profile_linear_parent"
@@ -81,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:text="Kopi Gunungmalang Official"
                     android:id="@+id/profile_TV_name"
+                    android:textColor="@color/hitam_pekat"
                     android:textStyle="bold"
                     android:textSize="16dp"/>
                 <TextView
@@ -152,7 +130,7 @@
             android:clickable="true"
             android:elevation="4dp"
             android:textStyle="bold"
-            android:id="@+id/checkout_metode_pembayaran"
+            android:id="@+id/profile_TV_kebijakan_privasi"
             android:drawableLeft="@drawable/ic_sheild"
             android:padding="15dp"
             android:drawablePadding="30dp"
@@ -173,21 +151,7 @@
             android:drawablePadding="30dp"
             android:textColor="@color/hitam_pekat"
             android:text="Ketentuan Layanan" />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:textSize="16sp"
-            android:background="#fff"
-            android:clickable="true"
-            android:elevation="4dp"
-            android:textStyle="bold"
-            android:id="@+id/profile_TV_pengaturan"
-            android:drawableLeft="@drawable/ic_settings"
-            android:padding="15dp"
-            android:drawablePadding="30dp"
-            android:textColor="@color/hitam_pekat"
-            android:text="Pengaturan" />
+
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -218,15 +182,17 @@
             android:drawablePadding="30dp"
             android:textColor="@color/hitam_pekat"
             android:text="Bantuan" />
+
         <Button
+            android:id="@+id/profile_BT_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:text="KELUAR"
             android:drawableRight="@drawable/ic_exit"
-            android:textColor="@color/merah"
-            android:drawablePadding="15dp"/>
+            android:drawablePadding="15dp"
+            android:text="KELUAR"
+            android:textColor="@color/merah" />
 
     </LinearLayout>
 
