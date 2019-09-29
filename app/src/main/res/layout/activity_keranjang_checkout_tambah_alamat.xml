@@ -6,4 +6,148 @@
     android:layout_height="match_parent"
     tools:context=".keranjang_belanja.activity_keranjang_checkout_tambah_alamat">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/tambah_alamat_provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/hitam_pekat"
+                android:ems="10"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:inputType="textPersonName"
+                android:hint="Provinsi" />
+
+            <EditText
+                android:id="@+id/tambah_alamat_kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/hitam_pekat"
+                android:ems="10"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:inputType="textPersonName"
+                android:hint="Kabupaten / Kota" />
+
+            <EditText
+                android:id="@+id/tambah_alamat_kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/hitam_pekat"
+                android:ems="10"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:inputType="textPersonName"
+                android:hint="Kecamatan" />
+
+            <EditText
+                android:id="@+id/tambah_alamat_kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/hitam_pekat"
+                android:ems="10"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:inputType="textPersonName"
+                android:hint="Kelurahan / Desa" />
+
+            <EditText
+                android:id="@+id/tambah_alamat_kodepos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/hitam_pekat"
+                android:ems="10"
+                android:background="@drawable/xml_round_shape_whitee"
+                android:inputType="number"
+                android:hint="Kode Pos" />
+            <TableLayout
+                android:id="@+id/tambah_alamat_pengiriman_lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/putih"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Alamat Lengkap : "
+                    android:textColor="@color/hitam_pekat"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+                <TableRow
+                    android:id="@+id/tambah_alamat_TR_pengirimlengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:id="@+id/tambah_alamat_ET_alamat_lengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/biru_muda"
+                        android:gravity="center"
+                        android:textColor="@color/hitam_pekat"
+                        android:hint="Masukkan alamat lengkap Anda"
+                        android:textSize="16dp" />
+                </TableRow>
+
+            </TableLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="simpan alamat"
+                android:layout_margin="10dp"
+                android:id="@+id/tambah_alamat_save_alamat"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:background="@color/coklat"></Button>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
