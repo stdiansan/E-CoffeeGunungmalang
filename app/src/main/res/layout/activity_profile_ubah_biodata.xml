@@ -4,6 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/abu_abu"
     tools:context=".profile.activity_profile_ubah_biodata">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/putih"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/ubah_ET_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16dp"
+                android:hint="Nama Anda"
+                android:inputType="textPersonName" />
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/putih"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/ubah_ET_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="16dp"
+                    android:hint="Email Anda"
+                    android:inputType="textEmailAddress" />
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/putih"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Nomor Telepon" />
+
+                <EditText
+                    android:id="@+id/ubah_ET_nomor_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="16dp"
+                    android:hint="Nomor Telepon Anda"
+                    android:inputType="phone" />
+            </TableLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN"
+                android:layout_margin="10dp"
+                android:id="@+id/ubah_BT_simpan"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:background="@color/coklat"></Button>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -90,7 +90,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/home_TV_harga_produk1"
-                                android:text="RP. "
+                                android:text="RP. 50000"
                                 android:textColor="#000000"></TextView>
                         </TableLayout>
                             <Button
@@ -152,7 +152,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:id="@+id/home_TV_harga_produk2"
-                                    android:text="RP. "
+                                    android:text="RP. 65000"
                                     android:textColor="#000000"></TextView>
                             </TableLayout>
                             <Button
@@ -214,7 +214,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:id="@+id/home_TV_harga_produk3"
-                                    android:text="RP. "
+                                    android:text="RP. 55000"
                                     android:textColor="#000000"></TextView>
                             </TableLayout>
                             <Button
@@ -276,7 +276,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:id="@+id/home_TV_harga_produk4"
-                                    android:text="RP. "
+                                    android:text="RP. 50000"
                                     android:textColor="#000000"></TextView>
                             </TableLayout>
                             <Button

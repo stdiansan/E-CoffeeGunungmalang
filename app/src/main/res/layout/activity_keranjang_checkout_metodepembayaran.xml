@@ -5,5 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".keranjang_belanja.activity_keranjang_checkout_metodepembayaran">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/metode_pembayaran_scrollview">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"
+            android:id="@+id/metode_pembayaran_LL_forscroll"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/metode_pembayaran_TV_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Memuat..." />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
